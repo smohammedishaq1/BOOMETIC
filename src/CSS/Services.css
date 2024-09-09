@@ -1,0 +1,484 @@
+
+.card{
+    width: 280px;
+    height: 360px;
+    border: double 0.1em transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(white, white), 
+    linear-gradient(to bottom, #FF1D03, white);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0px 0px 2px 0.1px ;
+    margin-left: 90px;
+    margin-top: 30px;
+    /* background-color:#2EC4B6; */ 
+}
+.card1{
+    width: 280px;
+    height: 360px;
+    border: double 0.1em transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(#F6FFFE, #F6FFFE), 
+    linear-gradient(to bottom, rgba(46, 196, 182, 1), rgba(46, 196, 182, 0));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0px 0px 2px 0.1px ;
+    margin-left: 90px;
+    margin-top: 30px;
+    /* background-color:#2EC4B6; */   
+}
+.Services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+    gap: 1px; 
+    /* max-width: 600px;   */
+    margin-left: -30%;
+    margin-top: 20%;
+}
+.subdiv{
+    height: 90px;
+    width: 90px;
+    background-color: #FFECEA;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.subdiv1{
+    height: 90px;
+    width: 90px;
+    background-color: #D2FFFB;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    
+}
+
+.subdiv img, .subdiv1 img{
+    width: 100%;
+}
+.subdiv h3{
+    display: inline;
+}
+.heading{
+    
+    font-size: 4vw;
+    text-align: left;
+    text-decoration: underline;
+    font-weight: 1800;
+    color: #F48434;
+    margin-left: 5%;
+}
+.card a, .card1 a{
+    margin-bottom: -30px;
+    color:#FC0403;
+
+}
+.cont h3 {
+    width: 100px;
+}
+.cont {
+    padding-left: 5%;
+    margin-top: 30px;
+    width: 100%;
+}
+.cont h3{
+    width:100%;
+    padding-left:1% ;
+}
+.Step-cont {
+    display:grid;
+    grid-template-columns: repeat(3,1fr); /* 3 columns */
+    /* grid-template-rows: repeat(1, 1fr);    */
+    gap:2px;   
+}
+.step{
+    width: 300px;
+    height:150px;
+    background-color: white;
+    border: 1px rgb(0, 0, 0) solid;
+    /* max-width: 600px; */
+    margin-left:10% ;
+    margin-top: 20%;
+    margin-bottom: 40%;
+    color: #F48434;
+    padding-left:2%;
+    padding: 4%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px;
+}
+.step h5{
+font-size: 12.5px;
+}
+.step p{
+margin-top: 4%;
+font-size: 1.3vh;
+color: black;
+}
+
+
+.icon{
+    color:#FC0403;
+}
+
+.Popup{
+    animation: scales 0.5s ease-in;
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    /* box-shadow: 30px 10px 150px ; */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+
+
+.top-left-div {
+    width: 100px;
+    height: 100px;
+    background-color: #FFECEA;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+    
+}
+.top-left-div img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.top-right-div {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.main-content-div {
+    width: 90%;
+    height: 200px;
+    /* background-color: #2ecc71; */
+    position: absolute;
+    /* bottom: 0; */
+}
+.main-content-div p{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.heady h3{
+    color: black;
+    
+    font-size: 130%;
+    margin-top: 125px;
+    left: 0;
+    margin-left: 20px;
+    
+}
+
+.cross{
+   
+    width: 24px;
+    height:24px;
+    background-color: #FC0403;
+    border-radius: 50%;
+    padding: 3px;
+    color:white;
+    
+}
+.btn{
+    width:600px ;
+    background-color: #F48434;
+    height: 40px;
+   margin-top: 200px;
+   border: none;
+   border-radius: 10px;
+}
+/* body :not(.Popup) {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px); 
+} */
+
+@keyframes scales {
+    from{
+        transform: scale(0);
+        
+    }
+    to{
+        transform: scale(1);
+        
+    }
+}
+@media only screen and (max-width: 600px) {
+    .Services{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: repeat(2, 1fr);   
+        gap: 2px; 
+        max-width: 600px;
+        margin:auto;       
+    }
+    .card,.card1{
+        margin: auto;
+        margin-top: 5%;
+        width: 90%;
+    }
+    .card p,.card1 p{
+        width: 90%;
+        
+    }
+    .Step-cont {
+        display:grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 columns */
+        grid-template-rows: repeat(1, 1fr);    /* 2 rows */
+        
+    }
+    .step{
+        width: 80%;
+        height:70%;
+        background-color: white;
+        border: 1px rgb(0, 0, 0) solid;
+        max-width: 600px;
+        margin: auto;
+        /* margin-left:10% ; */
+        margin-top: 10%;
+        margin-bottom: 5%;
+        color: #F48434;
+        padding-left:2%;
+        padding: 4%;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px;
+    }
+    .step h5{
+        font-size: 20px;
+        }
+    .step p{
+        margin-top: 4%;
+        font-size: 2vh;
+        color: black;
+        }
+  
+    
+    .btn{
+        width:60%;
+        background-color: #F48434;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        margin-top:400px;
+        bottom:4%;
+        position:absolute;
+        margin: auto;
+        margin-left: 15%;
+        margin-top: -8%;
+    }
+    /* .subdiv{
+
+    } */
+   .content p{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-top:60%;
+    margin-left: -30%;
+}
+   .subdivision{
+    height: 90px;
+    width: 90px;
+    background-color: #FFECEA;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+   .subdivision img, .subdivision img{
+       width: 1000%;
+}
+.Popup{
+    animation: scales 0.5s ease-in;
+    width: 85%;
+    height: 400px;
+    background-color: white;
+    /* box-shadow: 30px 10px 150px ; */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 3;
+    backdrop-filter: blur(5px);
+    
+}
+.heady h3{
+    color: black;
+    font-size: 130%;
+    margin-top: 43px;
+    left: 0;
+    margin-left: 120px;
+    
+}
+.main-content-div p{
+    margin-top: 10%;
+    margin-left: 20px;
+}
+
+
+
+}
+@media only screen and (min-width: 600px) {
+    
+    .Services{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, 1fr);   
+    
+        row-gap: 2%;
+        /* min-width: 600px; */
+        margin:auto;       
+    }
+    .card,.card1{
+        margin: auto;
+        /* margin-top: 10%; */
+        width: 80%;
+        /* margin-left: 2%; */
+    }
+    .card p,.card1 p{
+        width: 80%;
+        
+    }
+
+  
+    .Step-cont {
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);   
+        gap:-32%; 
+        margin-top: 10%;
+               
+    }
+    .step{
+        width: 80%;
+        height:50%;
+        background-color: white;
+        border: 1px rgb(0, 0, 0) solid;
+        /* min-width: 600px; */
+        margin: auto; 
+        /* margin-left:10% ; */
+        margin-top: 100px;
+        margin-bottom: 5%;
+        color: #F48434;
+        padding-left:2%;
+        padding: 4%;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px;
+        position: static;
+    }
+    .step h5{
+        font-size: 20px;
+ }
+    .step p{
+        margin-top: 4%;
+        font-size: 100%;
+        color: black;
+        }
+
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px){
+    .Services{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, 1fr);   
+        margin-top: 20%;  
+        row-gap: 2%;
+        margin:auto;       
+    }
+    .card,.card1{
+        margin: auto;
+        width: 80%;
+    }
+    .Step-cont {
+        display:grid;
+        grid-template-columns: repeat(3,1fr); /* 3 columns */
+        gap:2px;   
+    }
+    .step{
+        width: 80%;
+        height:55%;
+        background-color: white;
+        border: 1px rgb(0, 0, 0) solid;
+        /* max-width: 600px; */
+        margin-left:10% ;
+        margin-top: 20%;
+        margin-bottom: 40%;
+        color: #F48434;
+        padding-left:2%;
+        padding: 4%;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px;
+    }
+    .step h5{
+    font-size: 15px;
+    }
+    .step p{
+    margin-top: 4%;
+    font-size: 100%;
+    color: black;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .Step-cont {
+        display:grid;
+        grid-template-columns: repeat(3,1fr); /* 3 columns */
+        /* grid-template-rows: repeat(1, 1fr);    */
+        gap:2px;   
+    }
+
+    .step{
+        width: 300px;
+        height:50%;
+        background-color: white;
+        border: 1px rgb(0, 0, 0) solid;
+        /* max-width: 600px; */
+        margin-left:10% ;
+        margin-top: 20%;
+        margin-bottom: 40%;
+        color: #F48434;
+        padding-left:2%;
+        padding: 4%;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px;
+    }
+
+    .step h5{
+    font-size: 20px;
+    }
+    .step p{
+    margin-top: 4%;
+    font-size: 100%;
+    color: black;
+    }
+}
